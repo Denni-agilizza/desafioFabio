@@ -27,7 +27,6 @@ Passo a Passo
 
 1. Clonar o repositório
 Abra o terminal e rode o comando abaixo para baixar o código para a sua máquina:
-```bash
 git clone [https://github.com/Denni-agilizza/desafioFabio.git](https://github.com/Denni-agilizza/desafioFabio.git)
 
 2. Entrar na pasta do projeto
