@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inventário de TI</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div id="boxLogo">
+                <div id="logo">TI</div>
+                <h1>Inventário<br>de TI</h1>
+            </div>
+
+            <input type="text" placeholder="Buscar equipamento..." />
+
+            <button id="menuToggle" aria-label="Abrir menu">☰</button>
+        </nav>
+    </header>
+
+    <main>
+        <aside id="sidebar">
+            <article class="artigoDash">
+                <img src="img/dash.png" alt="Dashboard">
+                <h3>Dashboard</h3>
+            </article>
+
+            <article class="artigoDash">
+                <img src="img/caixaPreta.png" alt="Inventário">
+                <h3>Inventário</h3>
+            </article>
+
+            <article class="artigoDash">
+                <img src="img/relatorio.png" alt="Relatórios">
+                <h3>Relatórios</h3>
+            </article>
+
+            <article class="artigoDash">
+                <img src="img/settings.png" alt="Configurações">
+                <h3>Configurações</h3>
+            </article>
+        </aside>
+
+        <section class="conteudo">
+            <section class="ativos">
+                <h2>Inventário de Ativos</h2>
+                <p>Gerencie e monitore todos os equipamentos de TI da sua organização</p>
+
+                <div class="containerStatus">
+                    <article>
+                        <div>
+                            <h3>Total de Equipamentos</h3>
+                            <p>4</p>
+                        </div>
+                        <img id="caixa" src="img/caixa.png" alt="Caixa">
+                    </article>
+
+                    <article>
+                        <div>
+                            <h3>Em Uso</h3>
+                            <p>3</p>
+                        </div>
+                        <img id="users" src="img/users.png" alt="Usuários">
+                    </article>
+
+                    <article>
+                        <div>
+                            <h3>Setores Atendidos</h3>
+                            <p>4</p>
+                        </div>
+                        <img id="predios" src="img/crescimento.png" alt="Prédios">
+                    </article>
+                </div>
+            </section>
+
+            <section class="cadastro">
+                <h3>Cadastrar Novo Equipamento</h3>
+                <p>Preencha os dados abaixo para adicionar um novo ativo ao inventário.</p>
+
+                <form id="formCadastro" <div class="linha-form">
+                    <div class="campo">
+                        <label for="id">ID Numérico</label>
+                        <input type="number" id="id" placeholder="Ex: 1001">
+                    </div>
+
+                    <div class="campo">
+                        <label for="tipo">Tipo</label>
+                        <select id="tipo">
+                            <option value="">Selecione o tipo</option>
+                            <option>Computador</option>
+                            <option>Notebook</option>
+                            <option>Monitor</option>
+                            <option>Mouse</option>
+                            <option>Teclado</option>
+                        </select>
+                    </div>
+                    </div>
+
+                    <div class="linha-form">
+                        <div class="campo">
+                            <label for="modelo">Modelo / Marca</label>
+                            <input type="text" id="modelo" placeholder="Ex: Dell Inspiron 15">
+                        </div>
+
+                        <div class="campo">
+                            <label for="colaborador">Colaborador</label>
+                            <input type="text" id="colaborador" placeholder="Nome completo">
+                        </div>
+                    </div>
+
+                    <div class="linha-form">
+                        <div class="campo campo-full">
+                            <label for="setor">Setor</label>
+                            <select id="setor">
+                                <option value="">Selecione o setor</option>
+                                <option>RH</option>
+                                <option>Comercial</option>
+                                <option>TI</option>
+                                <option>Financeiro</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="botao">
+                        <button type="submit">Cadastrar Equipamento</button>
+                    </div>
+                </form>
+            </section>
+
+            <section class="equipamentos">
+                <div class="texto">
+                    <h3>Equipamentos Cadastrados</h3>
+                    <p>3 equipamentos no inventário</p>
+                </div>
+                <div class="seletores">
+
+                    <p>ID</p>
+                    <p>Tipo</p>
+                    <p>Modelo / Marca</p>
+                    <p class="ocultosMobile">Colaborador</p>
+                    <p class="ocultosMobile">Setor</p>
+                    <p class="ocultosMobile">Ações</p>
+                </div>
+                <div id="listaEquipamentos"></div>
+            </section>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

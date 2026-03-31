@@ -1,0 +1,9 @@
+[
+    {
+        "id": "1000",
+        "tipo": "Computador",
+        "modelo": "Dell",
+        "colaborador": "Joao",
+        "setor": "RH"
+    }
+]
